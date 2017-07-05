@@ -1,24 +1,14 @@
-# README
+# Hodor-server
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## About
+Hodor-server is a very simple CAS protocol implementation, in Rails.
+At the moment this repository is just proof of concept, and should not be expected to reach production-level maturity any time soon (if ever)
 
-Things you may want to cover:
+In summary: I really wouldn't use this yet if I were you.
 
-* Ruby version
+It's being developed following TDD as part of a training mechanism inside my current company.
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Ruby version 2.4.1
+* No database really configured yet
+* Clone it, bundle it
+* `$ rspec`
