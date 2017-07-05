@@ -3,7 +3,17 @@ require 'rails_helper'
 feature 'login', type: :feature do
 
   context 'Without a service param' do
-    scenario 'without cookie passing correct credentials'
+    scenario 'without cookie passing correct credentials' do
+      visit '/login'
+
+      expect(page).to have_content 'Login'
+
+      fill_in('username', with: 'testuser')
+      fill_in('password', with: '123456')
+      click_button('login')
+
+      expect(page).to have_content 'Logged in successfully!'
+    end
     scenario 'without cookie passing wrong credentials'
   end
 

@@ -1,0 +1,16 @@
+<div class="container top10">
+  <div class="row">
+    <div class="center">
+      <h1>Login</h1>
+      <%= form_tag sessions_path do %>
+          <div class="login top10">
+            <%= text_field_tag('username', nil, placeholder: 'username', required: true) %>
+            <%= password_field_tag('password', nil, placeholder: 'password', required: true) %>
+            <%= submit_tag 'login' %>
+          </div>
+      <% end %>
+    </div>
+  </div>
+</div>
+
+
