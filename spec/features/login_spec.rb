@@ -33,7 +33,7 @@ feature 'login', type: :feature do
     fill_in('password', with: '123456')
     click_button('login')
     cookies = page.driver.request.env['rack.request.cookie_hash']
-    expect(cookies['CASTGT']).to eql 'TGT-123456'
+    expect(cookies['CASTGT']).to_not be_nil
   end
 
   scenario 'Without a service param passing correct credentials logs in' do
@@ -49,8 +49,18 @@ feature 'login', type: :feature do
     expect(page.current_path).to eql '/home'
   end
 
-  context 'With a service param logs in and redirects to service with the ticket'
+  scenario 'With a service param logs in and redirects to service with the ticket' do
+    service = 'https://apps.example.com'
+    escaped_service = Rack::Utils.escape(service)
+    visit '/login?service=' + escaped_service
 
-
+    fill_in('username', with: 'testuser')
+    fill_in('password', with: '123456')
+    do_not_follow_redirect do
+      click_button('login')
+      expect(page.driver.status_code).to eq(302)
+      expect(page.driver.browser.last_response['Location']).to include('apps.example.com?ticket=')
+    end
+  end
 
 end

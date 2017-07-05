@@ -8,4 +8,5 @@ class ApplicationController < ActionController::Base
   def successful_login_path
     home_path
   end
+
 end
