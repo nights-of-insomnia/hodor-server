@@ -20,6 +20,7 @@ class SessionsController < ApplicationController
 
   def login_and_redirect
     create_session
+    set_cookie
     redirect_to successful_login_path, notice: t('.success')
   end
 
@@ -36,6 +37,14 @@ class SessionsController < ApplicationController
     if current_user
       redirect_to successful_login_path, notice: t('sessions.new.has_session')
     end
+  end
+
+  def set_cookie
+    cookies[:CASTGT] = generate_cookie
+  end
+
+  def generate_cookie
+    { value: 'TGT-123456', expires: 20.minutes.from_now }
   end
 
 end

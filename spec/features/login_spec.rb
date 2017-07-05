@@ -2,45 +2,55 @@ require 'rails_helper'
 
 feature 'login', type: :feature do
 
-  context 'Without a service param' do
-    scenario 'without cookie passing correct credentials' do
-      visit '/login'
+  scenario 'Passing wrong credentials does not login' do
+    visit '/login'
 
-      expect(page).to have_content 'Login'
+    expect(page).to have_content 'Login'
 
-      fill_in('username', with: 'testuser')
-      fill_in('password', with: '123456')
-      click_button('login')
+    fill_in('username', with: 'testuser')
+    fill_in('password', with: '999999')
+    click_button('login')
 
-      expect(page).to have_content 'Logged in successfully!'
-      expect(page.current_path).to eql '/home'
-    end
-    scenario 'without cookie passing wrong credentials' do
-      visit '/login'
-
-      expect(page).to have_content 'Login'
-
-      fill_in('username', with: 'testuser')
-      fill_in('password', with: '999999')
-      click_button('login')
-
-      expect(page).to have_content 'Sorry! Incorrect credentials.'
-    end
+    cookies = page.driver.request.env['rack.request.cookie_hash']
+    expect(cookies['CASTGT']).to eql nil
+    expect(page).to have_content 'Sorry! Incorrect credentials.'
   end
 
-  context 'With a service param' do
-    scenario 'when logged off passing correct credentials'
-    scenario 'when logged off passing wrong credentials'
+  scenario 'when already logged redirects user to the home page' do
+    login('testuser', '123456')
+    visit '/login'
+
+    expect(page.current_path).to eql '/home'
+    expect(page).to have_content 'Already logged in.'
   end
 
-  context 'when already logged' do
-    scenario 'redirects user to the home page' do
-      login('testuser', '123456')
-      visit '/login'
+  scenario 'passing correct credentials sets the cookie' do
+    visit '/login'
 
-      expect(page.current_path).to eql '/home'
-      expect(page).to have_content 'Already logged in.'
-    end
+    expect(page).to have_content 'Login'
+
+    fill_in('username', with: 'testuser')
+    fill_in('password', with: '123456')
+    click_button('login')
+    cookies = page.driver.request.env['rack.request.cookie_hash']
+    expect(cookies['CASTGT']).to eql 'TGT-123456'
   end
+
+  scenario 'Without a service param passing correct credentials logs in' do
+    visit '/login'
+
+    expect(page).to have_content 'Login'
+
+    fill_in('username', with: 'testuser')
+    fill_in('password', with: '123456')
+    click_button('login')
+
+    expect(page).to have_content 'Logged in successfully!'
+    expect(page.current_path).to eql '/home'
+  end
+
+  context 'With a service param logs in and redirects to service with the ticket'
+
+
 
 end
