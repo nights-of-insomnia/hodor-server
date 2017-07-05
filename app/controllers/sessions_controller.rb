@@ -4,10 +4,19 @@ class SessionsController < ApplicationController
   end
 
   def create
-    redirect_to home_path, notice: t('.success') if correct_credentials?
+    verify_credentials
   end
 
   private
+
+  def verify_credentials
+    if correct_credentials?
+      redirect_to successful_login_path, notice: t('.success')
+    else
+      flash.alert = t('.failure')
+      render :new
+    end
+  end
 
   def correct_credentials?
     params[:username] == 'testuser' && params[:password] == '123456'
