@@ -1,5 +1,7 @@
 en:
   sessions:
+    new:
+      has_session: 'Already logged in.'
     create:
       success: 'Logged in successfully!'
       failure: 'Sorry! Incorrect credentials.'

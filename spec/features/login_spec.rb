@@ -29,16 +29,18 @@ feature 'login', type: :feature do
   end
 
   context 'With a service param' do
-    scenario 'when logged off passing correct credentials' do
-
-    end
-    scenario 'when logged off passing wrong credentials' do
-      
-    end
+    scenario 'when logged off passing correct credentials'
+    scenario 'when logged off passing wrong credentials'
   end
 
   context 'when already logged' do
-    scenario 'redirects user to a home page'
+    scenario 'redirects user to the home page' do
+      login('testuser', '123456')
+      visit '/login'
+
+      expect(page.current_path).to eql '/home'
+      expect(page).to have_content 'Already logged in.'
+    end
   end
 
 end
