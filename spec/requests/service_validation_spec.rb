@@ -30,6 +30,7 @@ describe 'Service validation', type: :request do
   it 'hitting the endpoint with correct service and ticket' do
     get '/service_validation.json', params: {service: 'www.example.com', ticket: '123'}
     expect(response).to have_http_status(200)
+    expect(json_parsed_response['username']).to eql 'testuser'
   end
 
   it 'hitting the endpoint with expired ticket' do

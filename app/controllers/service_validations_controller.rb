@@ -5,7 +5,7 @@ class ServiceValidationsController < ApplicationController
   before_action :verify_valid_ticket
 
   def show
-    head 200
+    render json: { username: 'testuser' }
   end
 
   private
