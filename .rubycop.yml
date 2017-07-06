@@ -1,0 +1,37 @@
+AllCops:
+  RunRailsCops: true
+
+# Commonly used screens these days easily fit more than 80 characters.
+Metrics/LineLength:
+  Max: 80
+
+# No space makes the method definition shorter and differentiates
+# from a regular assignment.
+Style/SpaceAroundEqualsInParameterDefault:
+  EnforcedStyle: no_space
+
+# We do not need to support Ruby 1.9, so this is good to use.
+Style/SymbolArray:
+  Enabled: true
+
+Style/CollectionMethods:
+  Enabled: true
+  PreferredMethods:
+    # inject seems more common in the community.
+    reduce: "inject"
+
+# Indenting the chained dots beneath each other is not supported by this cop,
+# see https://github.com/bbatsov/rubocop/issues/1633
+Style/MultilineOperationIndentation:
+  Enabled: false
+
+# do / end blocks should be used for side effects,
+# methods that run a block for side effects and have
+# a useful return value are rare, assign the return
+# value to a local variable for those cases.
+Style/MethodCalledOnDoEndBlock:
+  Enabled: true
+
+# Check with yard instead.
+Style/Documentation:
+  Enabled: false 
