@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   get 'home', to: 'home#show'
   resource :sessions, only: :create
 
+  root to: 'home#show'
+
 end
