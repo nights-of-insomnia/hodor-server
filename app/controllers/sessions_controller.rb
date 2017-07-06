@@ -39,7 +39,7 @@ class SessionsController < ApplicationController
   end
 
   def redirect_if_authenticated
-    redirect_to_home(t('sessions.new.has_session')) if current_user
+    redirect_to_home(t('sessions.new.has_session')) if valid_cookie_set?
   end
 
   def set_cookie
