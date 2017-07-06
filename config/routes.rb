@@ -1,10 +1,12 @@
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
-
-  get 'login', to: 'sessions#new'
+  root to: 'home#show'
   get 'home', to: 'home#show'
+  get 'login', to: 'sessions#new'
+
   resource :sessions, only: :create
 
-  root to: 'home#show'
+
+  resource :service_validation, only: :show
 
 end

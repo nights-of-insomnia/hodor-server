@@ -1,5 +1,4 @@
 class SessionsController < ApplicationController
-  skip_before_action :login_required
   before_action :redirect_if_authenticated
 
   def new
