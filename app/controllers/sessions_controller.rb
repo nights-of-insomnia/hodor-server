@@ -78,5 +78,4 @@ class SessionsController < ApplicationController
     # persist ticket
     { ticket: 'ST-1234' }
   end
-
 end

@@ -24,11 +24,10 @@ class ServiceValidationsController < ApplicationController
   end
 
   def required_params_set?
-    required_params.detect {|param| params[param].blank? }.nil?
+    required_params.detect { |param| params[param].blank? }.nil?
   end
 
   def required_params
-    [:service, :ticket]
+    %i[service ticket]
   end
-
 end

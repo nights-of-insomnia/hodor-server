@@ -1,7 +1,6 @@
 require 'rails_helper'
 
 feature 'login', type: :feature do
-
   scenario 'Passing wrong credentials does not login' do
     visit '/login'
 
@@ -49,7 +48,7 @@ feature 'login', type: :feature do
     expect(page.current_path).to eql '/home'
   end
 
-  scenario 'With a service param logs in and redirects to service with the ticket' do
+  scenario 'With a service param redirects to service with the ticket' do
     service = 'https://apps.example.com'
     escaped_service = Rack::Utils.escape(service)
     visit '/login?service=' + escaped_service
@@ -59,8 +58,8 @@ feature 'login', type: :feature do
     do_not_follow_redirect do
       click_button('login')
       expect(page.driver.status_code).to eq(302)
-      expect(page.driver.browser.last_response['Location']).to include('apps.example.com?ticket=')
+      expect(page.driver.browser.last_response['Location'])
+        .to include('apps.example.com?ticket=')
     end
   end
-
 end

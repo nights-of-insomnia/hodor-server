@@ -1,5 +1,4 @@
 module LoginHelper
-
   def login(username, password)
     visit '/login'
     fill_in 'username', with: username
@@ -7,17 +6,14 @@ module LoginHelper
     click_button 'login'
   end
 
-  def do_not_follow_redirect &block
-    begin
-      options = page.driver.instance_variable_get(:@options)
-      prev_value = options[:follow_redirects]
-      options[:follow_redirects] = false
-      yield
-    ensure
-      options[:follow_redirects] = prev_value
-    end
+  def do_not_follow_redirect
+    options = page.driver.instance_variable_get(:@options)
+    prev_value = options[:follow_redirects]
+    options[:follow_redirects] = false
+    yield
+  ensure
+    options[:follow_redirects] = prev_value
   end
-
 end
 
 RSpec.configure do |config|

@@ -6,7 +6,5 @@ Rails.application.routes.draw do
 
   resource :sessions, only: :create
 
-
   resource :service_validation, only: :show
-
 end
