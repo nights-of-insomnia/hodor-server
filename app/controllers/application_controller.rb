@@ -12,7 +12,7 @@ class ApplicationController < ActionController::Base
   end
 
   def cas_cookie_valid?
-    true
+    Tickets::HodorTGT.validate_ticket(cas_cookie)
   end
 
   def valid_cookie_set?
