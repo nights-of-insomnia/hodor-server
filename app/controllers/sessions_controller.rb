@@ -20,7 +20,7 @@ class SessionsController < ApplicationController
   end
 
   def correct_credentials?
-    params[:username] == 'testuser' && params[:password] == '123456'
+    Credentials::Checker.valid?(user_params)
   end
 
   def login_and_redirect
@@ -76,5 +76,9 @@ class SessionsController < ApplicationController
   def ticket_hash
     # persist ticket
     { ticket: 'ST-1234' }
+  end
+
+  def user_params
+    params.permit(:username, :password)
   end
 end

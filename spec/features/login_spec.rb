@@ -16,7 +16,7 @@ feature 'login', type: :feature do
   end
 
   scenario 'when already logged redirects user to the home page' do
-    login('testuser', '123456')
+    create_user_and_login('testuser', '123456')
     visit '/login'
 
     expect(page.current_path).to eql '/home'
@@ -24,6 +24,7 @@ feature 'login', type: :feature do
   end
 
   scenario 'passing correct credentials sets the cookie' do
+    create_user('testuser', '123456')
     visit '/login'
 
     expect(page).to have_content 'Login'
@@ -36,6 +37,7 @@ feature 'login', type: :feature do
   end
 
   scenario 'Without a service param passing correct credentials logs in' do
+    create_user('testuser', '123456')
     visit '/login'
 
     expect(page).to have_content 'Login'
@@ -49,6 +51,7 @@ feature 'login', type: :feature do
   end
 
   scenario 'With a service param redirects to service with the ticket' do
+    create_user('testuser', '123456')
     service = 'https://apps.example.com'
     escaped_service = Rack::Utils.escape(service)
     visit '/login?service=' + escaped_service
