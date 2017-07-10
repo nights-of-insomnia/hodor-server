@@ -32,6 +32,9 @@ describe 'Service validation', type: :request do
   end
 
   it 'hitting the endpoint with correct service and ticket' do
+    service = Service.create(name: 'test service')
+    service.service_urls.create(url: 'www.example.com')
+
     get '/service_validation.json',
         params: { service: 'www.example.com', ticket: '123' }
     expect(response).to have_http_status(200)
@@ -39,10 +42,14 @@ describe 'Service validation', type: :request do
   end
 
   it 'hitting the endpoint with expired ticket' do
+    service = Service.create(name: 'test service')
+    service.service_urls.create(url: 'www.example.com')
+
     get '/service_validation.json',
         params: { service: 'www.example.com', ticket: '123' }
     expect(response).to have_http_status(200)
   end
 
-  it 'hitting the endpoint with consumed ticket'
+  it 'hitting the endpoint with consumed ticket' do
+  end
 end

@@ -1,8 +1,6 @@
 class ServiceValidationsController < ApplicationController
   before_action :ensure_json_request
-  before_action :verify_params
-  before_action :verify_registered_service
-  before_action :verify_valid_ticket
+  before_action :verify_valid_params
 
   def show
     render json: { username: 'testuser' }
@@ -10,17 +8,19 @@ class ServiceValidationsController < ApplicationController
 
   private
 
-  def verify_params
-    head 422 unless required_params_set?
+  def verify_valid_params
+    head 422 unless required_params_set? &&
+                    registered_service? &&
+                    valid_ticket?
   end
 
   # change
-  def verify_registered_service
-    head 422 unless params[:service] == 'www.example.com'
+  def registered_service?
+    Services::Validation.registered?(params[:service])
   end
 
-  def verify_valid_ticket
-    head 422 unless params[:ticket] == '123'
+  def valid_ticket?
+    params[:ticket] == '123'
   end
 
   def required_params_set?
