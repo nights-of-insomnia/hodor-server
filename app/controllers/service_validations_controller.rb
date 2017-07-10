@@ -14,7 +14,6 @@ class ServiceValidationsController < ApplicationController
                     valid_ticket?
   end
 
-  # change
   def registered_service?
     Services::Validation.registered?(params[:service])
   end

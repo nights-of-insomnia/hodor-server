@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20170707170402) do
+ActiveRecord::Schema.define(version: 20170710150042) do
 
   create_table "service_urls", force: :cascade do |t|
     t.integer "service_id"
@@ -24,6 +24,12 @@ ActiveRecord::Schema.define(version: 20170707170402) do
     t.string "name"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+  end
+
+  create_table "tgt_cookies", force: :cascade do |t|
+    t.string "cookie"
+    t.string "username"
+    t.datetime "created_at"
   end
 
 end

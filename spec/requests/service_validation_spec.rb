@@ -41,15 +41,6 @@ describe 'Service validation', type: :request do
     expect(json_parsed_response['username']).to eql 'testuser'
   end
 
-  it 'hitting the endpoint with expired ticket' do
-    service = Service.create(name: 'test service')
-    service.service_urls.create(url: 'www.example.com')
-
-    get '/service_validation.json',
-        params: { service: 'www.example.com', ticket: '123' }
-    expect(response).to have_http_status(200)
-  end
-
-  it 'hitting the endpoint with consumed ticket' do
-  end
+  it 'hitting the endpoint with expired ticket'
+  it 'hitting the endpoint with consumed ticket'
 end

@@ -43,12 +43,11 @@ class SessionsController < ApplicationController
   end
 
   def set_cookie
-    cookies.signed[:CASTGT] = generate_cookie
+    cookies.signed[:CASTGT] = generate_tgt
   end
 
-  def generate_cookie
-    # persist cookie
-    { value: 'TGT-123456', expires: 20.minutes.from_now }
+  def generate_tgt
+    Tickets::HodorTGT.generate_ticket(session[:username])
   end
 
   def successful_redirect
