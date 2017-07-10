@@ -11,4 +11,11 @@ feature 'Visiting home', type: :feature do
     visit '/'
     expect(page).to have_content 'Logged in!'
   end
+
+  scenario 'logged in with expired cookie redirects me to login' do
+    login('testuser', '123456')
+    TGTCookie.last.update_attributes(created_at: 30.minutes.ago)
+    visit '/'
+    expect(page.current_path).to eql '/login'
+  end
 end

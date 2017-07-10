@@ -14,7 +14,7 @@
       <img src="./assets/0.10.1/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-10T16:58:36-03:00">2017-07-10T16:58:36-03:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2017-07-10T17:04:31-03:00">2017-07-10T17:04:31-03:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -25,7 +25,7 @@
      covered at
      <span class="covered_strength">
        <span class="green">
-         2.0
+         2.24
        </span>
     </span> hits/line)
   </h2>
@@ -57,7 +57,7 @@
         <td>15</td>
         <td>15</td>
         <td>0</td>
-        <td>5.5</td>
+        <td>6.8</td>
       </tr>
       
       <tr>
@@ -87,7 +87,7 @@
         <td>43</td>
         <td>43</td>
         <td>0</td>
-        <td>2.9</td>
+        <td>3.3</td>
       </tr>
       
       <tr>
@@ -97,7 +97,7 @@
         <td>4</td>
         <td>4</td>
         <td>0</td>
-        <td>5.5</td>
+        <td>6.5</td>
       </tr>
       
       <tr>
@@ -157,7 +157,7 @@
         <td>5</td>
         <td>5</td>
         <td>0</td>
-        <td>3.8</td>
+        <td>5.0</td>
       </tr>
       
       <tr>
@@ -167,7 +167,7 @@
         <td>11</td>
         <td>11</td>
         <td>0</td>
-        <td>2.9</td>
+        <td>3.4</td>
       </tr>
       
       <tr>
@@ -177,7 +177,7 @@
         <td>9</td>
         <td>9</td>
         <td>0</td>
-        <td>2.6</td>
+        <td>3.1</td>
       </tr>
       
       <tr>
@@ -187,7 +187,7 @@
         <td>5</td>
         <td>5</td>
         <td>0</td>
-        <td>2.2</td>
+        <td>2.8</td>
       </tr>
       
       <tr>
@@ -377,7 +377,7 @@
         <td>14</td>
         <td>14</td>
         <td>0</td>
-        <td>1.3</td>
+        <td>1.6</td>
       </tr>
       
       <tr>
@@ -456,8 +456,8 @@
           <code class="ruby">  def login_required</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="7">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="9" data-linenumber="7">
+          <span class="hits">9</span>
           
           <code class="ruby">    redirect_to login_path unless valid_cookie_set?</code>
         </li>
@@ -480,8 +480,8 @@
           <code class="ruby">  def cas_cookie</code>
         </li>
       
-        <li class="covered" data-hits="28" data-linenumber="11">
-          <span class="hits">28</span>
+        <li class="covered" data-hits="36" data-linenumber="11">
+          <span class="hits">36</span>
           
           <code class="ruby">    cookies.signed[:CASTGT]</code>
         </li>
@@ -504,8 +504,8 @@
           <code class="ruby">  def cas_cookie_valid?</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="15">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="10" data-linenumber="15">
+          <span class="hits">10</span>
           
           <code class="ruby">    Tickets::HodorTGT.validate_ticket(cas_cookie)</code>
         </li>
@@ -528,8 +528,8 @@
           <code class="ruby">  def valid_cookie_set?</code>
         </li>
       
-        <li class="covered" data-hits="21" data-linenumber="19">
-          <span class="hits">21</span>
+        <li class="covered" data-hits="26" data-linenumber="19">
+          <span class="hits">26</span>
           
           <code class="ruby">    cas_cookie &amp;&amp; cas_cookie_valid?</code>
         </li>
@@ -576,8 +576,8 @@
           <code class="ruby">  def successful_login_path</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="27">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="27">
+          <span class="hits">6</span>
           
           <code class="ruby">    home_path</code>
         </li>
@@ -897,8 +897,8 @@
           <code class="ruby">  def new</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="5">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="9" data-linenumber="5">
+          <span class="hits">9</span>
           
           <code class="ruby">    set_service_session</code>
         </li>
@@ -921,8 +921,8 @@
           <code class="ruby">  def create</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="9">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="9">
+          <span class="hits">7</span>
           
           <code class="ruby">    verify_credentials</code>
         </li>
@@ -957,8 +957,8 @@
           <code class="ruby">  def set_service_session</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="15">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="9" data-linenumber="15">
+          <span class="hits">9</span>
           
           <code class="ruby">    session[:service] = params[:service]</code>
         </li>
@@ -981,8 +981,8 @@
           <code class="ruby">  def verify_credentials</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="19">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="19">
+          <span class="hits">7</span>
           
           <code class="ruby">    correct_credentials? ? login_and_redirect : failed_credentials</code>
         </li>
@@ -1005,8 +1005,8 @@
           <code class="ruby">  def correct_credentials?</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="23">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="23">
+          <span class="hits">7</span>
           
           <code class="ruby">    params[:username] == &#39;testuser&#39; &amp;&amp; params[:password] == &#39;123456&#39;</code>
         </li>
@@ -1029,20 +1029,20 @@
           <code class="ruby">  def login_and_redirect</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="27">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="27">
+          <span class="hits">6</span>
           
           <code class="ruby">    create_session</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="28">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="28">
+          <span class="hits">6</span>
           
           <code class="ruby">    set_cookie</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="29">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="29">
+          <span class="hits">6</span>
           
           <code class="ruby">    successful_redirect</code>
         </li>
@@ -1095,8 +1095,8 @@
           <code class="ruby">  def create_session</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="38">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="38">
+          <span class="hits">6</span>
           
           <code class="ruby">    session[:username] = params[:username]</code>
         </li>
@@ -1119,8 +1119,8 @@
           <code class="ruby">  def redirect_if_authenticated</code>
         </li>
       
-        <li class="covered" data-hits="14" data-linenumber="42">
-          <span class="hits">14</span>
+        <li class="covered" data-hits="17" data-linenumber="42">
+          <span class="hits">17</span>
           
           <code class="ruby">    redirect_to_home(t(&#39;sessions.new.has_session&#39;)) if valid_cookie_set?</code>
         </li>
@@ -1143,8 +1143,8 @@
           <code class="ruby">  def set_cookie</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="46">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="46">
+          <span class="hits">6</span>
           
           <code class="ruby">    cookies.signed[:CASTGT] = generate_tgt</code>
         </li>
@@ -1167,8 +1167,8 @@
           <code class="ruby">  def generate_tgt</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="50">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="50">
+          <span class="hits">6</span>
           
           <code class="ruby">    Tickets::HodorTGT.generate_ticket(session[:username])</code>
         </li>
@@ -1191,8 +1191,8 @@
           <code class="ruby">  def successful_redirect</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="54">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="54">
+          <span class="hits">6</span>
           
           <code class="ruby">    service ? redirect_with_ticket : redirect_to_home</code>
         </li>
@@ -1215,8 +1215,8 @@
           <code class="ruby">  def service</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="58">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="58">
+          <span class="hits">7</span>
           
           <code class="ruby">    session[:service]</code>
         </li>
@@ -1263,14 +1263,14 @@
           <code class="ruby">  def redirect_to_home(notice=nil)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="66">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="66">
+          <span class="hits">6</span>
           
           <code class="ruby">    notice ||= t(&#39;.success&#39;)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="67">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="67">
+          <span class="hits">6</span>
           
           <code class="ruby">    redirect_to successful_login_path, notice: notice</code>
         </li>
@@ -1390,14 +1390,14 @@
           <code class="ruby">    flash.map do |key, msg|</code>
         </li>
       
-        <li class="covered" data-hits="6" data-linenumber="4">
-          <span class="hits">6</span>
+        <li class="covered" data-hits="7" data-linenumber="4">
+          <span class="hits">7</span>
           
           <code class="ruby">      content_tag :div, msg, id: key, class: &#39;flash&#39;</code>
         </li>
       
-        <li class="covered" data-hits="14" data-linenumber="5">
-          <span class="hits">14</span>
+        <li class="covered" data-hits="17" data-linenumber="5">
+          <span class="hits">17</span>
           
           <code class="ruby">    end.join</code>
         </li>
@@ -1774,14 +1774,14 @@
           <code class="ruby"></code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="5">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="11" data-linenumber="5">
+          <span class="hits">11</span>
           
           <code class="ruby">  scope :by_cookie, -&gt;(cookie) { where(cookie: cookie) }</code>
         </li>
       
-        <li class="covered" data-hits="8" data-linenumber="6">
-          <span class="hits">8</span>
+        <li class="covered" data-hits="11" data-linenumber="6">
+          <span class="hits">11</span>
           
           <code class="ruby">  scope :created_after, -&gt;(time) { where(&#39;created_at &gt;= ?&#39;, time.to_s(:db)) }</code>
         </li>
@@ -1859,14 +1859,14 @@
           <code class="ruby">      def generate_ticket(username)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="9">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="9">
+          <span class="hits">6</span>
           
           <code class="ruby">        store_ticket(username)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="10">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="10">
+          <span class="hits">6</span>
           
           <code class="ruby">        ticket</code>
         </li>
@@ -1901,8 +1901,8 @@
           <code class="ruby">      def store_ticket(username)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="16">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="16">
+          <span class="hits">6</span>
           
           <code class="ruby">        TGTCookie.create(username: username, cookie: ticket)</code>
         </li>
@@ -1925,8 +1925,8 @@
           <code class="ruby">      def ticket</code>
         </li>
       
-        <li class="covered" data-hits="10" data-linenumber="20">
-          <span class="hits">10</span>
+        <li class="covered" data-hits="12" data-linenumber="20">
+          <span class="hits">12</span>
           
           <code class="ruby">        @ticket ||= SecureRandom.base58(24)</code>
         </li>
@@ -2028,8 +2028,8 @@
           <code class="ruby">    def self.generate_ticket(username, generator = Generators::TGTGenerator.new)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="10">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="10">
+          <span class="hits">6</span>
           
           <code class="ruby">      cookie_hash_for generator.generate_ticket(username)</code>
         </li>
@@ -2076,8 +2076,8 @@
           <code class="ruby">    def self.validate_ticket(ticket, validator = Validators::TGTValidator.new)</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="18">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="10" data-linenumber="18">
+          <span class="hits">10</span>
           
           <code class="ruby">      validator.validate_ticket(ticket, COOKIE_DURATION.ago)</code>
         </li>
@@ -2100,8 +2100,8 @@
           <code class="ruby">    def self.cookie_hash_for(ticket)</code>
         </li>
       
-        <li class="covered" data-hits="5" data-linenumber="22">
-          <span class="hits">5</span>
+        <li class="covered" data-hits="6" data-linenumber="22">
+          <span class="hits">6</span>
           
           <code class="ruby">      { value: ticket, expires: COOKIE_DURATION.from_now }</code>
         </li>
@@ -2209,8 +2209,8 @@
           <code class="ruby">          .created_after(min_period_allowed)</code>
         </li>
       
-        <li class="covered" data-hits="7" data-linenumber="12">
-          <span class="hits">7</span>
+        <li class="covered" data-hits="10" data-linenumber="12">
+          <span class="hits">10</span>
           
           <code class="ruby">          .any?</code>
         </li>
@@ -4076,26 +4076,26 @@
           <code class="ruby">  def login(username, password)</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="3">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="3">
+          <span class="hits">3</span>
           
           <code class="ruby">    visit &#39;/login&#39;</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="4">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="4">
+          <span class="hits">3</span>
           
           <code class="ruby">    fill_in &#39;username&#39;, with: username</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="5">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="5">
+          <span class="hits">3</span>
           
           <code class="ruby">    fill_in &#39;password&#39;, with: password</code>
         </li>
       
-        <li class="covered" data-hits="2" data-linenumber="6">
-          <span class="hits">2</span>
+        <li class="covered" data-hits="3" data-linenumber="6">
+          <span class="hits">3</span>
           
           <code class="ruby">    click_button &#39;login&#39;</code>
         </li>
