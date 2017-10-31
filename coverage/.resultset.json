@@ -1,14 +1,14 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/rennanoliveira/Projects/hodor-server/config/environment.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/home/rennanoliveira/Projects/hodor-server/config/application.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/config/application.rb": [
         1,
         1,
         1,
@@ -19,12 +19,12 @@
         null,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/config/boot.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/config/boot.rb": [
         1,
         null,
         1
       ],
-      "/home/rennanoliveira/Projects/hodor-server/config/environments/test.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/config/environments/test.rb": [
         1,
         1,
         1,
@@ -47,7 +47,7 @@
         1,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/config/initializers/application_controller_renderer.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/config/initializers/application_controller_renderer.rb": [
         null,
         null,
         null,
@@ -55,7 +55,7 @@
         null,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/config/initializers/assets.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/config/initializers/assets.rb": [
         null,
         null,
         null,
@@ -71,24 +71,24 @@
         null,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/config/initializers/backtrace_silencers.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/config/initializers/backtrace_silencers.rb": [
         null,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/config/initializers/cookies_serializer.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/config/initializers/cookies_serializer.rb": [
         null,
-        null,
-        null,
-        null,
-        1
-      ],
-      "/home/rennanoliveira/Projects/hodor-server/config/initializers/filter_parameter_logging.rb": [
         null,
         null,
         null,
         1
       ],
-      "/home/rennanoliveira/Projects/hodor-server/config/initializers/inflections.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/config/initializers/filter_parameter_logging.rb": [
+        null,
+        null,
+        null,
+        1
+      ],
+      "/home/rennanoliveira/Projects/forks/hodor-server/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -106,18 +106,30 @@
         null,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/config/initializers/mime_types.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/config/initializers/wrap_parameters.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/config/initializers/secure_headers.rb": [
+        1,
+        1,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "/home/rennanoliveira/Projects/forks/hodor-server/config/initializers/wrap_parameters.rb": [
         1,
         2,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/config/routes.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/config/routes.rb": [
         1,
         null,
         1,
@@ -129,7 +141,7 @@
         1,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/app/helpers/application_helper.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/app/helpers/application_helper.rb": [
         1,
         1,
         null,
@@ -138,7 +150,7 @@
         null,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/spec/support/shoulda_matchers.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/spec/support/shoulda_matchers.rb": [
         1,
         1,
         1,
@@ -146,7 +158,7 @@
         null,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/spec/support/login_helper.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/spec/support/login_helper.rb": [
         1,
         1,
         6,
@@ -178,7 +190,7 @@
         1,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/spec/support/json_parse_helper.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/spec/support/json_parse_helper.rb": [
         1,
         1,
         1,
@@ -189,7 +201,7 @@
         1,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/spec/features/login_spec.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/spec/features/login_spec.rb": [
         1,
         null,
         1,
@@ -259,7 +271,7 @@
         null,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/spec/models/service_spec.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/spec/models/service_spec.rb": [
         1,
         null,
         1,
@@ -272,19 +284,19 @@
         null,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/app/models/service.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/app/models/service.rb": [
         1,
         1,
         null,
         1,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/app/models/application_record.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/app/models/application_record.rb": [
         1,
         1,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/spec/models/service_url_spec.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/spec/models/service_url_spec.rb": [
         1,
         null,
         1,
@@ -297,7 +309,7 @@
         null,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/app/models/service_url.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/app/models/service_url.rb": [
         1,
         1,
         null,
@@ -306,7 +318,29 @@
         4,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/spec/models/user_spec.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/spec/models/ticket_spec.rb": [
+        1,
+        null,
+        1,
+        1,
+        2,
+        null,
+        null,
+        1,
+        2,
+        null,
+        null
+      ],
+      "/home/rennanoliveira/Projects/forks/hodor-server/app/models/ticket.rb": [
+        1,
+        null,
+        1,
+        null,
+        1,
+        null,
+        null
+      ],
+      "/home/rennanoliveira/Projects/forks/hodor-server/spec/models/user_spec.rb": [
         1,
         null,
         1,
@@ -316,7 +350,7 @@
         null,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/app/models/user.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/app/models/user.rb": [
         1,
         1,
         null,
@@ -324,7 +358,7 @@
         1,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/spec/requests/service_validation_spec.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/spec/requests/service_validation_spec.rb": [
         1,
         null,
         1,
@@ -372,14 +406,14 @@
         1,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/app/controllers/home_controller.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/app/controllers/home_controller.rb": [
         1,
         1,
         null,
         1,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/app/controllers/application_controller.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/app/controllers/application_controller.rb": [
         1,
         1,
         null,
@@ -410,7 +444,7 @@
         null,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/app/controllers/sessions_controller.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/app/controllers/sessions_controller.rb": [
         1,
         1,
         null,
@@ -496,7 +530,7 @@
         null,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/app/models/credentials/checker.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/app/models/credentials/checker.rb": [
         null,
         null,
         null,
@@ -509,7 +543,7 @@
         null,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/app/models/credentials/validators/base.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/app/models/credentials/validators/base.rb": [
         null,
         1,
         1,
@@ -526,7 +560,7 @@
         null,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/app/models/tickets/hodor_tgt.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/app/models/tickets/hodor_tgt.rb": [
         null,
         1,
         1,
@@ -553,7 +587,7 @@
         null,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/app/models/tickets/generators/tgt_generator.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/app/models/tickets/generators/tgt_generator.rb": [
         null,
         null,
         null,
@@ -579,7 +613,7 @@
         null,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/app/models/tgt_cookie.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/app/models/tgt_cookie.rb": [
         1,
         1,
         1,
@@ -588,7 +622,7 @@
         11,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/app/models/tickets/validators/tgt_validator.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/app/models/tickets/validators/tgt_validator.rb": [
         null,
         null,
         null,
@@ -606,7 +640,7 @@
         null,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/app/controllers/service_validations_controller.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/app/controllers/service_validations_controller.rb": [
         1,
         1,
         1,
@@ -640,7 +674,7 @@
         null,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/app/models/services/validation.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/app/models/services/validation.rb": [
         null,
         null,
         null,
@@ -653,7 +687,7 @@
         null,
         null
       ],
-      "/home/rennanoliveira/Projects/hodor-server/app/models/services/validator.rb": [
+      "/home/rennanoliveira/Projects/forks/hodor-server/app/models/services/validator.rb": [
         null,
         null,
         1,
@@ -667,6 +701,6 @@
         null
       ]
     },
-    "timestamp": 1509126162
+    "timestamp": 1509462730
   }
 }
